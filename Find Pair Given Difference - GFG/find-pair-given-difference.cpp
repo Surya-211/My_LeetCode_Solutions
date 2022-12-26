@@ -49,7 +49,7 @@ bool findPair(int arr[], int size, int n){
        }
        else
        {
-           if(m[diff]>0)
+           if(m.find(diff)!=m.end())
            {
                flag=1;
                break;

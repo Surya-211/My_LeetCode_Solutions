@@ -52,57 +52,24 @@ class Solution
             two++;
             temp=temp->next;
         }
-        Node* ans=NULL;
-        Node* prev=NULL;
-        int i=1;
-        while(i<=zero)
+        temp=head;
+        while(temp!=NULL)
         {
-            Node* t=new Node(0);
-            if(ans==NULL)
+            if(zero-->0)
             {
-                ans=t;
-                prev=t;
+                temp->data=0;
+            }
+            else if(one-->0)
+            {
+                temp->data=1;
             }
             else
             {
-                prev->next=t;
-                prev=t;
+                temp->data=2;
             }
-            i++;
+            temp=temp->next;
         }
-        i=1;
-        while(i<=one)
-        {
-            Node* t=new Node(1);
-            if(ans==NULL)
-            {
-                ans=t;
-                prev=t;
-            }
-            else
-            {
-                prev->next=t;
-                prev=t;
-            }
-            i++;
-        }
-        i=1;
-        while(i<=two)
-        {
-            Node* t=new Node(2);
-            if(ans==NULL)
-            {
-                ans=t;
-                prev=t;
-            }
-            else
-            {
-                prev->next=t;
-                prev=t;
-            }
-            i++;
-        }
-        return ans;
+        return head;
         
     }
 };

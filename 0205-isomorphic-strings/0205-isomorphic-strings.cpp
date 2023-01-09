@@ -13,7 +13,7 @@ public:
                 m1[s[i]]=t[i];
                 m2[t[i]]=s[i];
             }
-            if(m1[s[i]]!=t[i]||m2[t[i]]!=s[i])
+            else if(m1[s[i]]!=t[i]||m2[t[i]]!=s[i])
                 return false;
         }
         return true;

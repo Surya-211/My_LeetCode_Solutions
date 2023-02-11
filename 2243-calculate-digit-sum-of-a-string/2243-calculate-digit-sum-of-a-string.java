@@ -14,8 +14,8 @@ class Solution {
                 count++;
                 if(count==k)
                 {
-                    String str=String.valueOf(sum);
-                    nstr+=str;
+                    //String str=String.valueOf(sum);
+                    nstr+=sum;
                     sum=0;
                     count=0;
                 }

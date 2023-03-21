@@ -15,19 +15,13 @@ public:
             else
             {
                 flag=0;
-                if(n%2==0)
-                count+=n/2*(n+1);
-            else
-                count+=(n+1)/2*n;
+                count+=n*(n+1)/2;
                 n=0;
             }
         }
         if(flag==1)
         {
-            if(n%2==0)
-                count+=n/2*(n+1);
-            else
-                count+=(n+1)/2*n;
+            count+=n*(n+1)/2;
         }
         return count;
     }

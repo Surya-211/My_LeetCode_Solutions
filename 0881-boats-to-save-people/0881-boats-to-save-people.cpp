@@ -8,33 +8,15 @@ public:
         int n=people.size();
         int i=0;
         int j=n-1;
-        while(j>=0&&people[j]>=limit)
+        
+        while(i<=j)
         {
             count++;
+            if(people[i]+people[j]<=limit)
+                i++;
             j--;
         }
-        int flag;
-        while(i<j)
-        {
-            flag=0;
-            int sum=people[i]+people[j];
-            if(sum<=limit)
-            {
-                flag=1;
-                count++;
-                i++;
-                j--;
-            }
-            else
-            {
-                count++;
-                j--;
-            }
-        }
-        if(i==j)
-            count++;
-        else if(flag==0)
-            count++;
+        
         return count;
     }
 };

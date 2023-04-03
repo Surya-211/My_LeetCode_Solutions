@@ -9,7 +9,7 @@ public:
             {
                 if(i==1 || check(i,j)==1)
                 {
-                    string s=to_string(i)+'/'+to_string(j);
+                    string s=to_string(i)+"/"+to_string(j);
                     v.push_back(s);
                 }
             }

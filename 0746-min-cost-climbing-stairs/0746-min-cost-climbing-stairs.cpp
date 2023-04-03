@@ -2,13 +2,11 @@ class Solution {
 public:
     
     int t[1002];
-    //memset(t,-1,sizeof(t));
     
     int minCostClimbingStairs(vector<int>& cost) {
         
         int n=cost.size();
-        for(int i=0;i<1002;i++)
-            t[i]=-1;
+        memset(t,-1,sizeof(t));
         int c1=climb(cost,0,n);
         int c2=climb(cost,1,n);
         return min(c1,c2);

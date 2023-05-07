@@ -1,7 +1,6 @@
 class Solution {
 public:
-    int minFlips(string target) {
-        
+    int minFlips(string target) { 
         int count=0;
         int s=target.size();
         for(int i=s-1;i>=0;i--)

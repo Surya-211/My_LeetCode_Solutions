@@ -7,7 +7,6 @@ public:
             return 0;
         if(dp[i]!=-1)
             return dp[i];
-        int flag=0;
         int mini=1+f(v,dp,i+1,s,m,n);
         for(int j=1;j<=n-i;j++)
         {

@@ -4,8 +4,6 @@ public:
     {
         if(source==destination)
             return true;
-        if(vis[source]==1)
-            return false;
         vis[source]=1;
         for(int i=0;i<m[source].size();i++)
         {

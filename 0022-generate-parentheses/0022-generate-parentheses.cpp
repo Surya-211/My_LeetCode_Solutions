@@ -7,7 +7,7 @@ public:
             ans.push_back(s);
             return;
         }
-        if(s.empty() || open==close)
+        if(open==close)
         {
             s.push_back('(');
             func(n,i+1,open+1,close,s,ans);

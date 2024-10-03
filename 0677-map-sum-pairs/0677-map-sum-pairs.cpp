@@ -14,7 +14,7 @@ public:
         for(auto i:m)
         {
             string str=i.first;
-            if(str.starts_with(prefix))
+            if(str.find(prefix)==0)
                 sum+=i.second;
         }
         return sum;
